@@ -1,48 +1,28 @@
-export const itemCategories = [
-  "Wallet",
-  "ID Card",
-  "Keys",
-  "Bag",
-  "Book",
-  "Phone",
-  "Laptop",
-  "Charger",
-  "Earphones",
-  "Documents",
-  "Other",
-];
-
-export const lostItems = [
+export const foundItems = [
   {
     id: 1,
-    title: "Black Wallet",
-    description: "Lost black leather wallet near library reading room.",
-    category: "Wallet",
-    color: "Black",
-    location: "Library",
-    lostDate: "2026-07-02",
+    title: "Blue College ID Card",
+    description: "Found blue college ID card near canteen table.",
+    category: "ID Card",
+    color: "Blue",
+    location: "Canteen",
+    foundDate: "2026-07-02",
     imageUrl:
-      "https://images.unsplash.com/photo-1627123424574-724758594e93?w=800",
+      "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=800",
     status: "OPEN",
     reportedBy: "Normal User",
   },
   {
     id: 2,
-    title: "College ID Card",
-    description: "Lost blue college ID card near canteen.",
-    category: "ID Card",
-    color: "Blue",
-    location: "Canteen",
-    lostDate: "2026-07-01",
+    title: "Phone Charger",
+    description: "Found black phone charger in computer lab.",
+    category: "Charger",
+    color: "Black",
+    location: "Computer Lab",
+    foundDate: "2026-07-01",
     imageUrl:
-      "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=800",
+      "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=800",
     status: "MATCHED",
     reportedBy: "Normal User",
   },
 ];
-
-export const foundItems = [];
-
-export const matches = [];
-
-export const claims = [];

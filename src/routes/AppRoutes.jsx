@@ -5,6 +5,7 @@ import DashboardPage from "../pages/DashboardPage";
 import ReportLostPage from "../pages/ReportLostPage";
 import LostItemsPage from "../pages/LostItemsPage";
 import ReportFoundPage from "../pages/ReportFoundPage";
+import FoundItemsPage from "../pages/FoundItemsPage";
 import PrivateRoute from "./PrivateRoute";
 
 function AppRoutes() {
@@ -47,6 +48,15 @@ function AppRoutes() {
         element={
           <PrivateRoute>
             <ReportFoundPage />
+          </PrivateRoute>
+        }
+      />
+
+      <Route
+        path="/found-items"
+        element={
+          <PrivateRoute>
+            <FoundItemsPage />
           </PrivateRoute>
         }
       />
