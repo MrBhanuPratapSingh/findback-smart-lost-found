@@ -8,6 +8,7 @@ import ReportFoundPage from "../pages/ReportFoundPage";
 import FoundItemsPage from "../pages/FoundItemsPage";
 import ItemDetailsPage from "../pages/ItemDetailsPage";
 import MatchesPage from "../pages/MatchesPage";
+import MyClaimsPage from "../pages/MyClaimsPage";
 import PrivateRoute from "./PrivateRoute";
 
 function AppRoutes() {
@@ -77,6 +78,15 @@ function AppRoutes() {
         element={
           <PrivateRoute>
             <MatchesPage />
+          </PrivateRoute>
+        }
+      />
+
+      <Route
+        path="/claims"
+        element={
+          <PrivateRoute>
+            <MyClaimsPage />
           </PrivateRoute>
         }
       />
