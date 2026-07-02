@@ -57,9 +57,11 @@ function FoundItemsPage() {
     <MainLayout>
       <section className="mb-6">
         <p className="text-sm font-medium text-emerald-600">Found items</p>
+
         <h1 className="mt-2 text-3xl font-bold text-slate-900">
           Found Item Reports
         </h1>
+
         <p className="mt-2 max-w-2xl text-slate-600">
           View all items reported as found. Newly submitted found reports are
           loaded from local storage for now.
@@ -77,6 +79,7 @@ function FoundItemsPage() {
           <h2 className="text-lg font-bold text-slate-900">
             No found items available
           </h2>
+
           <p className="mt-2 text-sm text-slate-500">
             Try changing the search filters or submit a new found item report.
           </p>
@@ -87,6 +90,7 @@ function FoundItemsPage() {
             <ItemCard
               key={item.id}
               item={item}
+              type="found"
               dateLabel={`Found on ${item.foundDate}`}
             />
           ))}

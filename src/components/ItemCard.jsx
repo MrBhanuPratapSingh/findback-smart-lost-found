@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import { MapPin, CalendarDays } from "lucide-react";
 import StatusBadge from "./StatusBadge";
 
-function ItemCard({ item, dateLabel }) {
+function ItemCard({ item, dateLabel, type }) {
   return (
     <article className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
       <img
@@ -38,15 +39,16 @@ function ItemCard({ item, dateLabel }) {
 
         <div className="mt-4 flex items-center justify-between border-t border-slate-100 pt-4">
           <p className="text-sm text-slate-500">
-            Color: <span className="font-medium text-slate-700">{item.color}</span>
+            Color:{" "}
+            <span className="font-medium text-slate-700">{item.color}</span>
           </p>
 
-          <button
-            type="button"
+          <Link
+            to={`/item/${type}/${item.id}`}
             className="text-sm font-semibold text-blue-600 hover:text-blue-700"
           >
             View Details
-          </button>
+          </Link>
         </div>
       </div>
     </article>

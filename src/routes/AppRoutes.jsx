@@ -6,6 +6,7 @@ import ReportLostPage from "../pages/ReportLostPage";
 import LostItemsPage from "../pages/LostItemsPage";
 import ReportFoundPage from "../pages/ReportFoundPage";
 import FoundItemsPage from "../pages/FoundItemsPage";
+import ItemDetailsPage from "../pages/ItemDetailsPage";
 import PrivateRoute from "./PrivateRoute";
 
 function AppRoutes() {
@@ -57,6 +58,15 @@ function AppRoutes() {
         element={
           <PrivateRoute>
             <FoundItemsPage />
+          </PrivateRoute>
+        }
+      />
+
+      <Route
+        path="/item/:type/:id"
+        element={
+          <PrivateRoute>
+            <ItemDetailsPage />
           </PrivateRoute>
         }
       />
