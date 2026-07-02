@@ -4,6 +4,7 @@ import RegisterPage from "../pages/RegisterPage";
 import DashboardPage from "../pages/DashboardPage";
 import ReportLostPage from "../pages/ReportLostPage";
 import LostItemsPage from "../pages/LostItemsPage";
+import ReportFoundPage from "../pages/ReportFoundPage";
 import PrivateRoute from "./PrivateRoute";
 
 function AppRoutes() {
@@ -37,6 +38,15 @@ function AppRoutes() {
         element={
           <PrivateRoute>
             <LostItemsPage />
+          </PrivateRoute>
+        }
+      />
+
+      <Route
+        path="/report-found"
+        element={
+          <PrivateRoute>
+            <ReportFoundPage />
           </PrivateRoute>
         }
       />
